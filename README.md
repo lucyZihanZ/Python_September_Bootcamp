@@ -22,6 +22,15 @@
    At the beginning, an initial cash amount of $1000 is allocated to a portfolio (Portfolio), which interacts with the stock market (StockMarket) through predefined stock tickers (STOCK_TICKERS). The function get_the_rate() calculates the rate of increase or decrease in stock prices by comparing the prices of two consecutive days. The strategy is implemented through a loop that runs for 100 days. On each day, the algorithm compares the stock prices from the current and previous days. It calculates the rate of change for each stock ticker, then selects the stock with the maximum rate of increase (max_ticker) and the one with the maximum decrease (min_ticker). The decision to buy or sell depends on the absolute value of these rates.
 
 
+# NBA_players'_information_analysis
+
+The task involves performing data analysis on two CSV files, `"players.csv"` and `"salaries_1985to2018.csv"`, using `pandas`, `numpy`, `seaborn`, and `matplotlib`. The first step is to read both CSV files into separate dataframes and then merge them based on the player name, with a hint to rename one of the columns to facilitate the merge. Once merged, several analyses are performed on the combined dataframe.
+
+First, a `line plot` of average salaries by season should be created to determine whether salaries have been increasing over time. Similarly, a line plot of the average `player weight` by season is needed to observe whether player weight has been increasing. Next, the average salary for each `draft pick round` is calculated to identify any trends. `Players' heights` should be divided into 2-inch buckets, starting from 6'0 (e.g., 6'0-6'2, 6'2-6'4), and a histogram of these height buckets should be plotted. The average `salary` for each height bucket will also be analyzed. Since heights are stored as strings, they may need to be converted to inches as integers for easier sorting, then back to strings when plotting.
+
+Further analysis includes grouping by player ID to create a scatter plot of the average `career field goal percentage` (FG%) versus `effective field goal percentage` (eFG%). Converting the values from strings to floats may be necessary for accurate plotting. Finally, a similar grouping by player ID is used to make a scatter plot of average career `FG%` versus career free throw percentage (`FT%`), allowing for an investigation of any noticeable patterns or anomalies.
+
+
 # Stock Price Analysis
 Which stock should we buy?
 
