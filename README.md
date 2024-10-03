@@ -20,3 +20,27 @@
 3.**Strategy**:
 
    At the beginning, an initial cash amount of $1000 is allocated to a portfolio (Portfolio), which interacts with the stock market (StockMarket) through predefined stock tickers (STOCK_TICKERS). The function get_the_rate() calculates the rate of increase or decrease in stock prices by comparing the prices of two consecutive days. The strategy is implemented through a loop that runs for 100 days. On each day, the algorithm compares the stock prices from the current and previous days. It calculates the rate of change for each stock ticker, then selects the stock with the maximum rate of increase (max_ticker) and the one with the maximum decrease (min_ticker). The decision to buy or sell depends on the absolute value of these rates.
+
+
+# Stock Price Analysis
+Which stock should we buy?
+
+1. **`companies.csv`**: A dataset containing details of S&P 500 companies.
+    - **Columns**:
+        - `Name`: Name of the company.
+        - `Ticker`: Stock ticker symbol of the company.
+        - `Sector`: Industry sector to which the company belongs.
+
+2. **`stock_prices.csv`**: A dataset with daily stock prices for the past year for the companies listed in `companies.csv`.
+    - **Columns**:
+        - Company tickers derived from the `companies.csv` file.
+    - **Note**: The values in this dataset may not be exclusively in float type. There could be instances of `strings` and `NaN` types, which need to be handled for certain tasks.
+
+
+1. Plot Stock Prices vs. Time for Two Companies in One Plot:**
+
+2. Plot Average Stock Price for Each Sector:**
+
+First calculate the stock-level average price over the past year. Then, using the average of each stock over the past year, calculate the sector-level average price. Finaly, plot the sector-level average price. You can use any method of plotting.
+
+Answer:*From the image, we can see that over the past year, the `Consumer Staples` sector had the highest average stock price at `316.80` dollars per stock, which means it has been the best for investment. The `Health Care` sector comes second, with an average stock price of `243.68` dollars per stock.*
