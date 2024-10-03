@@ -1,4 +1,4 @@
-# Stock_price_simulation**
+# Stock_price_simulation
 
 1. StockMarket Class:
    It has a method named `advance_one_day` which simulates the stock market for one day. If the price of a stock drops below $0.01, you will no longer be able to trade it, and the number of shares of that stock in your portfolio will become 0.It has a method named `get_stock_prices` which returns the current stock price.
